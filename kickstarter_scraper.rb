@@ -24,6 +24,7 @@ def create_project_hash
       :location => project.css("ul.project-meta").text,
       :percent_funded => project.css("ul.project-stats li.first.fnded strong").text.gsub("%","").to_i
     }
+    binding.pry 
   end 
   
   projects 
